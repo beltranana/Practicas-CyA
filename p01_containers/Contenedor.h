@@ -10,10 +10,6 @@
 // Archivo: p01_containers/Contenedor.h
 // Declaración de la clase Contenedor, un contenedor dinámico de enteros
 // con operaciones básicas de gestión y acceso a sus elementos.
-// Referencias:
-// Enlaces de interés:
-// Historial de revisiones:
-// 17/09/2026 - Creación (primera versión) del código.
 
 #ifndef CONTENEDOR_H_
 #define CONTENEDOR_H_
