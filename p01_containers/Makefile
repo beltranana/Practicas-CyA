@@ -8,28 +8,25 @@
 # Correo: alu0101718330@ull.edu.es
 # Fecha: 17/09/2026
 # Archivo: p01_containers/Makefile
-# Fichero de reglas para compilar y limpiar el programa de demostración
-# del contenedor dinámico de enteros.
-# Referencias:
-# Enlaces de interés:
+# Descripción: Reglas de compilación del ejercicio 1.
 # Historial de revisiones:
-# 17/09/2026 - Creación (primera versión) del código.
+# 17/09/2026 - Actualización para p01_single_grades.
 
 CXX = g++
 CXXFLAGS = -std=c++17 -Wall -Wextra -pedantic
-TARGET = contenedor
-OBJECTS = main.o Contenedor.o
+TARGET = p01_single_grades
+OBJECTS = main.o Estudiante.o
 
 all: $(TARGET)
 
 $(TARGET): $(OBJECTS)
 	$(CXX) $(CXXFLAGS) -o $(TARGET) $(OBJECTS)
 
-main.o: main.cc Contenedor.h
+main.o: main.cc Estudiante.h
 	$(CXX) $(CXXFLAGS) -c main.cc
 
-Contenedor.o: Contenedor.cc Contenedor.h
-	$(CXX) $(CXXFLAGS) -c Contenedor.cc
+Estudiante.o: Estudiante.cc Estudiante.h
+	$(CXX) $(CXXFLAGS) -c Estudiante.cc
 
 clean:
 	rm -f $(TARGET) $(OBJECTS)
