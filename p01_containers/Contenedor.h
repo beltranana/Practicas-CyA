@@ -1,10 +1,19 @@
-/*
- * Proyecto: Practica 1 - Contenedores en C++
- * Fichero: p01_containers/Contenedor.h
- * Descripcion: Declaracion de un contenedor dinamico de enteros.
- * Autor: Beltrán, Rodrigo Barrios Gonzalez
- * Fecha: 2026-09-17
- */
+// Universidad de La Laguna
+// Escuela Superior de Ingeniería y Tecnología
+// Grado en Ingeniería Informática
+// Asignatura: Computabilidad y Algoritmia
+// Curso: 2º
+// Práctica 1: Contenedores
+// Autor: Beltrán Rodrigo Barrios González
+// Correo: alu0101718330@ull.edu.es
+// Fecha: 17/09/2026
+// Archivo: p01_containers/Contenedor.h
+// Declaración de la clase Contenedor, un contenedor dinámico de enteros
+// con operaciones básicas de gestión y acceso a sus elementos.
+// Referencias:
+// Enlaces de interés:
+// Historial de revisiones:
+// 17/09/2026 - Creación (primera versión) del código.
 
 #ifndef CONTENEDOR_H_
 #define CONTENEDOR_H_

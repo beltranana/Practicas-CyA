@@ -1,10 +1,20 @@
-/*
- * Proyecto: Practica 1 - Contenedores en C++
- * Fichero: p01_containers/main.cc
- * Descripcion: Programa principal de demostracion del contenedor dinamico.
- * Autor: Beltrán, Rodrigo Barrios Gonzalez
- * Fecha: 2026-09-17
- */
+// Universidad de La Laguna
+// Escuela Superior de Ingeniería y Tecnología
+// Grado en Ingeniería Informática
+// Asignatura: Computabilidad y Algoritmia
+// Curso: 2º
+// Práctica 1: Contenedores
+// Autor: Beltrán Rodrigo Barrios González
+// Correo: alu0101718330@ull.edu.es
+// Fecha: 17/09/2026
+// Archivo: p01_containers/main.cc
+// Programa cliente que contiene la función main y utiliza la clase
+// Contenedor para demostrar la inserción, consulta, modificación,
+// visualización y eliminación de elementos.
+// Referencias:
+// Enlaces de interés:
+// Historial de revisiones:
+// 17/09/2026 - Creación (primera versión) del código.
 
 #include "Contenedor.h"
 

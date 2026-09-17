@@ -1,10 +1,19 @@
-/*
- * Proyecto: Practica 1 - Contenedores en C++
- * Fichero: p01_containers/Makefile
- * Descripcion: Compilacion del programa del contenedor dinamico.
- * Autor: Beltrán, Rodrigo Barrios Gonzalez
- * Fecha: 2026-09-17
- */
+# Universidad de La Laguna
+# Escuela Superior de Ingeniería y Tecnología
+# Grado en Ingeniería Informática
+# Asignatura: Computabilidad y Algoritmia
+# Curso: 2º
+# Práctica 1: Contenedores
+# Autor: Beltrán Rodrigo Barrios González
+# Correo: alu0101718330@ull.edu.es
+# Fecha: 17/09/2026
+# Archivo: p01_containers/Makefile
+# Fichero de reglas para compilar y limpiar el programa de demostración
+# del contenedor dinámico de enteros.
+# Referencias:
+# Enlaces de interés:
+# Historial de revisiones:
+# 17/09/2026 - Creación (primera versión) del código.
 
 CXX = g++
 CXXFLAGS = -std=c++17 -Wall -Wextra -pedantic
