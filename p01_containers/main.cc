@@ -10,7 +10,7 @@
 // Archivo: p01_containers/main.cc
 // Descripción: Programa del ejercicio 1 para gestionar calificaciones.
 // Historial de revisiones:
-// 17/09/2026 - Creación e implementación de la opción --delete.
+// 17/09/2026 - Implementación de la opción --delete.
 
 #include "Estudiante.h"
 
@@ -19,6 +19,7 @@
 #include <iomanip>
 #include <iostream>
 #include <sstream>
+#include <stdexcept>
 #include <string>
 #include <vector>
 
@@ -39,15 +40,21 @@ bool LeerEstudiantes(const std::string& nombre_fichero,
 
   std::string linea;
   while (std::getline(fichero, linea)) {
-    if (linea.empty() || linea[0] == '#') {
-      continue;
-    }
-
-    std::replace(linea.begin(), linea.end(), ',', ' ');
-    std::replace(linea.begin(), linea.end(), ';', ' ');
     std::istringstream entrada(linea);
     std::string identificador;
     double nota;
+
+    // Las líneas vacías y los comentarios se ignoran. Se aceptan como
+    // separadores espacios, comas y puntos y coma.
+    if (linea.empty() || linea.find_first_not_of(" \t") == std::string::npos ||
+        linea[linea.find_first_not_of(" \t")] == '#') {
+      continue;
+    }
+    std::replace(linea.begin(), linea.end(), ',', ' ');
+    std::replace(linea.begin(), linea.end(), ';', ' ');
+    entrada.clear();
+    entrada.str(linea);
+
     if (!(entrada >> identificador >> nota)) {
       std::cerr << "Línea ignorada por formato incorrecto: " << linea
                 << std::endl;
@@ -69,8 +76,7 @@ bool GuardarEstudiantes(const std::string& nombre_fichero,
 
   fichero << std::setprecision(10);
   for (const Estudiante& estudiante : estudiantes) {
-    fichero << estudiante.identificador() << ' ' << estudiante.nota()
-            << '\n';
+    fichero << estudiante.identificador() << ' ' << estudiante.nota() << '\n';
   }
   return true;
 }
