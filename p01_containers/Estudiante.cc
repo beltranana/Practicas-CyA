@@ -14,6 +14,8 @@
 
 #include "Estudiante.h"
 
+#include <utility>
+
 Estudiante::Estudiante(std::string identificador, double nota)
     : identificador_(std::move(identificador)), nota_(nota) {
 }
