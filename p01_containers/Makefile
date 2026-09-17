@@ -1,8 +1,8 @@
 /*
  * Proyecto: Practica 1 - Contenedores en C++
- * Fichero: Makefile
+ * Fichero: p01_containers/Makefile
  * Descripcion: Compilacion del programa del contenedor dinamico.
- * Autor: Copilot
+ * Autor: Beltrán, Rodrigo Barrios Gonzalez
  * Fecha: 2026-09-17
  */
 

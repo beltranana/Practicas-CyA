@@ -1,8 +1,8 @@
 /*
  * Proyecto: Practica 1 - Contenedores en C++
- * Fichero: main.cc
+ * Fichero: p01_containers/main.cc
  * Descripcion: Programa principal de demostracion del contenedor dinamico.
- * Autor: Copilot
+ * Autor: Beltrán, Rodrigo Barrios Gonzalez
  * Fecha: 2026-09-17
  */
 

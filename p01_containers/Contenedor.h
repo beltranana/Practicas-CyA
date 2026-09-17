@@ -1,8 +1,8 @@
 /*
  * Proyecto: Practica 1 - Contenedores en C++
- * Fichero: Contenedor.h
+ * Fichero: p01_containers/Contenedor.h
  * Descripcion: Declaracion de un contenedor dinamico de enteros.
- * Autor: Copilot
+ * Autor: Beltrán, Rodrigo Barrios Gonzalez
  * Fecha: 2026-09-17
  */
 

@@ -1,8 +1,8 @@
 /*
  * Proyecto: Practica 1 - Contenedores en C++
- * Fichero: Contenedor.cc
+ * Fichero: p01_containers/Contenedor.cc
  * Descripcion: Implementacion de un contenedor dinamico de enteros.
- * Autor: Copilot
+ * Autor: Beltrán, Rodrigo Barrios Gonzalez
  * Fecha: 2026-09-17
  */
 
